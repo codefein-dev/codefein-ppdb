@@ -1,7 +1,7 @@
 :root {
   --primary: #50d04d;
   --bg: #fff;
-  --secondary: #455a64;
+  --secondary: #cbe0fe;
 }
 
 * {
@@ -31,7 +31,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 7%;
-  background-color: transparent;
+  background-color: #fff;
   border-bottom: 5px solid #d9d9d9;
   position: fixed;
   top: 0;
@@ -59,7 +59,7 @@ body {
   font-size: 1.2rem;
   margin: 0 1rem;
   font-weight: 700;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 .navbar .navbar-nav a:hover {
@@ -202,12 +202,12 @@ body {
 /* Fasilitas Section */
 .facility {
   position: relative;
-  padding: 8rem 0 1.4rem;
+  padding: 8rem 7% 1.4rem;
   background: url('../svg/wavee.svg');
   background-size: cover;
   width: 100%;
   min-height: 500px;
-  /* -webkit-transform: scale(-1); */
+  background-color: #cbe0fe;
 }
 
 .facility::before {
@@ -220,6 +220,7 @@ body {
   z-index: -2;
   background: #68e28c;
 }
+
 /* 
 .facility .vec {
   width: 100%;
@@ -235,6 +236,22 @@ body {
 
 .facility .row {
   display: flex;
+}
+
+.facility .row .facility-img {
+  flex: 1 1 40rem;
+}
+
+.facility .row .facility-img img {
+  width: 100%;
+}
+
+.facility .row .content {
+  flex: 1 1 40rem;
+  padding: 0 2rem;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 /* .facility h1 {
