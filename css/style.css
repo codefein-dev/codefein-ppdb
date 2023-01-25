@@ -214,7 +214,7 @@ body {
   content: '';
   display: block;
   position: absolute;
-  width: 100%;
+  width: 86%;
   height: 10%;
   top: 0;
   z-index: -2;
@@ -333,6 +333,10 @@ body {
 
   .hero .row .content h1 {
     color: #fff;
+  }
+
+  .facility .row {
+    flex-wrap: wrap;
   }
 }
 
