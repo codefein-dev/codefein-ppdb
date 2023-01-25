@@ -1,7 +1,7 @@
 :root {
   --primary: #50d04d;
-  --bg: #fff;
-  --secondary: #cbe0fe;
+  --bg: #f0f0f0;
+  --secondary: #455a64;
 }
 
 * {
@@ -146,7 +146,7 @@ body {
 .hero .row .content h5 {
   color: gray;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 /* 
 .hero .row .content p {
@@ -202,11 +202,11 @@ body {
 /* Fasilitas Section */
 .facility {
   position: relative;
-  padding: 8rem 7% 1.4rem;
+  padding: 6rem 7% 1.4rem;
   background: url('../svg/wavee.svg');
   background-size: cover;
   width: 100%;
-  min-height: 500px;
+  min-height: 800px;
   background-color: #cbe0fe;
 }
 
@@ -232,6 +232,7 @@ body {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .facility .row {
@@ -252,6 +253,7 @@ body {
   text-align: justify;
   font-weight: 400;
   font-size: 1.2rem;
+  color: #010101;
 }
 
 /* .facility h1 {
