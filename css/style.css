@@ -1,6 +1,6 @@
 :root {
   --primary: #50d04d;
-  --bg: #f0f0f0;
+  --bg: #fff;
   --secondary: #455a64;
 }
 
@@ -194,13 +194,13 @@ body {
 }
 
 .hero .row .content .login:hover {
-  background-color: #0fb80c;
+  background-color: #0da102;
   transform: scale(1.1);
 }
 /* Hero Section */
 
 /* Fasilitas Section */
-.facility {
+.fasilitas {
   position: relative;
   padding: 6rem 7% 1.4rem;
   background: url('../svg/wavee.svg');
@@ -210,7 +210,7 @@ body {
   background-color: #cbe0fe;
 }
 
-.facility::before {
+.fasilitas::before {
   content: '';
   display: block;
   position: absolute;
@@ -222,32 +222,42 @@ body {
 }
 
 /* 
-.facility .vec {
+.fasilitas .vec {
   width: 100%;
   height: 40%;
   transform: scale(-1, -1);
 } */
 
-.facility h2 {
+.fasilitas h2,
+.tahapan h2 {
   text-align: center;
   font-size: 2.6rem;
-  margin-bottom: 3rem;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
-.facility .row {
+.fasilitas h2 {
+  margin-bottom: 3rem;
+}
+
+.fasilitas .row {
   display: flex;
 }
 
-.facility .row .facility-img {
+.fasilitas .row .fasilitas-img {
   flex: 1 1 40rem;
 }
 
-.facility .row .facility-img img {
-  width: 100%;
+.fasilitas .row .fasilitas-img img {
+  width: 90%;
+  /* box-shadow: -18px 16px 21px rgba(0, 0, 0, 0.25); */
+  border-radius: 37px;
+  /* transform: scale3d(1, 1, 8); */
+  box-shadow: 10px 10px 94px 0px rgba(69, 160, 94, 0.75);
+  -webkit-box-shadow: 10px 10px 94px 0px rgba(69, 160, 94, 0.75);
+  -moz-box-shadow: 10px 10px 94px 0px rgba(69, 160, 94, 0.75);
 }
 
-.facility .row .content {
+.fasilitas .row .content {
   flex: 1 1 40rem;
   padding: 0 2rem;
   text-align: justify;
@@ -256,11 +266,32 @@ body {
   color: #010101;
 }
 
-/* .facility h1 {
+/* .fasilitas h1 {
   align-items: center;
   color: #0fb80c;
 } */
 /* Fasilitas Section */
+
+/* Tahapan Section */
+.tahapan {
+  position: relative;
+  padding: 6rem 7% 1.4rem;
+}
+
+.tahapan h2 {
+  color: var(--primary);
+}
+
+.tahapan p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #010101;
+  margin-bottom: 3rem;
+  margin-top: 0.7rem;
+}
+
+/* Tahapan Section */
 
 /* Media Queries */
 /* Laptop */
@@ -337,7 +368,7 @@ body {
     color: #fff;
   }
 
-  .facility .row {
+  .fasilitas .row {
     flex-wrap: wrap;
   }
 }
